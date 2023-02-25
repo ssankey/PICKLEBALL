@@ -15,7 +15,7 @@
 
 
 
-.wrap-banner{
+/* .wrap-banner{
   display:flex;
   justify-content:center;
   align-items:center;
@@ -38,8 +38,55 @@
 
 .wrap-banner span{
   color: #26e9d5;
-}
+} */
 
+/*HEADER*/
+.banner{
+       background:linear-gradient(rgba(0, 0, 0, 0), #009688),url("./images/hero.jpeg");
+      background-size:cover;
+      background-position: center;
+      align-items:center;
+      position:relative;
+      display:flex;
+      height: 100vh;
+  }
+
+  .flex_content{
+    width:100%;
+    position:relative;
+}
+.padding_1x{
+  padding:1rem;
+}
+  header section{  
+      padding:10rem 2rem;
+  }
+  
+  header article .title{
+    font-size: 6em;
+      line-height:1.3;
+      font-weight: bolder;
+      font-style: italic;
+      color: #FFF;
+  }
+  header article .title span{
+    color:#08d0bc;
+  }
+  header article p{
+      width:60%;
+  }
+  
+  @media (max-width:920px){
+    header article .title{
+      font-size: 3em;
+    }
+      header section{  
+          padding:6rem 0rem;
+      }
+
+  }
+  
+  
 #sideNav {
     width: 250px;
     height: 100vh;
@@ -279,6 +326,9 @@ nav ul li a {
  * Under 900px wrap cols
  */
 @media (max-width: 900px) {
+  .card-head{
+    font-size: 2rem;
+  }
 	.flex {
 		flex-wrap: wrap;
 	}
